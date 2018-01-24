@@ -18,8 +18,7 @@ public class Rectangle extends Application {
 		double height = Double.parseDouble(heightInput);		
 		
 		Alert alert = new Alert(AlertType.INFORMATION);
-		Alert.setContentText("Your perimeter is" + 2height + 2width);
-
+		Alert.setContentText("Your perimeter is" + 2*height + 2*width);
 		}
 	public static void main(String [] args) {
 		launch(args);	
