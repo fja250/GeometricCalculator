@@ -25,10 +25,12 @@ public class Rectangle extends Application {
 
 		double width = Double.parseDouble(wInput.getResult());	
 		
+		double perim = 2*(height + width);		
+
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Rectangle");
 		alert.setHeaderText("Perimeter");
-		alert.setContentText("Your perimeter is" + 2*height + 2*width);
+		alert.setContentText("Your perimeter is" + perim);
 		alert.showAndWait();
 
 		}
