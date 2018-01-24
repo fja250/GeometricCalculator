@@ -10,7 +10,11 @@ public class Rectangle extends Application {
 		Optional<String> result = textInputDialog.showAndWait();
 		String widthInput = result.get();
 		double width = Double.parseDouble(widthInput);
-	}
+
+		String heightInput = result.get();
+		double height = Double.parseDouble(heightInput);		
+
+		}
 	public static void main(String [] args) {
 		launch(args);	
 	}
