@@ -30,7 +30,7 @@ public class Rectangle extends Application {
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Rectangle");
 		alert.setHeaderText("Perimeter");
-		alert.setContentText("Your perimeter is" + perim);
+		alert.setContentText("Your perimeter is " + perim);
 		alert.showAndWait();
 
 		}
