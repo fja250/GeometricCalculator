@@ -9,14 +9,21 @@ public class Rectangle extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		
-		TextInputDialog input = new TextInputDialog();
-		input.setTitle("Rectangle Calc");
-		input.setHeaderText("Perimeter of Rectangle");
-		input.setContentText("Enter height & width");
-		input.showAndWait();
+		TextInputDialog hInput = new TextInputDialog();
+		hInput.setTitle("Rectangle Calc");
+		hInput.setHeaderText("Perimeter of Rectangle");
+		hInput.setContentText("Enter height");
+		hInput.showAndWait();
 
-		double height = Double.parseDouble(input.getResult());
-		double width = Double.parseDouble(input.getResult());	
+		double height = Double.parseDouble(hInput.getResult());
+		
+		TextInputDialog wInput = new TextInputDialog();
+		wInput.setTitle("Rectangle Calc");
+		wInput.setHeaderText("Perimeter of Rectangle");
+		wInput.setContentText("Enter Width");
+		wInput.showAndWait();
+
+		double width = Double.parseDouble(wInput.getResult());	
 		
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Rectangle");
